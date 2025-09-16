@@ -68,6 +68,19 @@ app.get('/barry', (req, res) => {
 
 })
 
+Another example of me using a "handoff" in mode code so that I wasn't confused when returning to the code or forgetting what to add is above. The comments "//endpoints...middlewares...apis?" told me when returning to the codes that I needed to add enpoints such as /api/query. The middlewares section explained that I need to add a "express.json()", so I needed to define my API endpoints first then add the middleware section later.
+
+#Simple Idea of a Handoff
+
+ -Example:
+  // TODO: connect this route to the database later
+app.get('/users', (req, res) => {
+  res.json({ message: "Users route not finished yet" });
+});
+
+-To simplify it in the eyes of someone who is unable to process the tech language this is a simple snipit of code that I created to show how these comments can help. By adding the "//TODO:...." you simple adding a sticky note to be specific to your code so that you are able to come back on a later date to complete it. So, in this case you can see that where the TODO comment is, that you need to connect the database to this system so it can run properly. This way you are able to pickup where you left off, or if you were to be handing this code to another individual, they can read this stick note and understand what to add to the code to make to run properly. 
+
+
 #Git Commands
 
 -"git commit -m "message"
@@ -95,20 +108,6 @@ Fetches and merges changes from a remote repository.
 Pushes local commits to a remote repository.
 
 There are a muiltitude of git commands you can uses, heres a link to show you a large portion of them: https://www.geeksforgeeks.org/git/git-cheat-sheet/
-
-
-
-Another example of me using a "handoff" in mode code so that I wasn't confused when returning to the code or forgetting what to add is above. The comments "//endpoints...middlewares...apis?" told me when returning to the codes that I needed to add enpoints such as /api/query. The middlewares section explained that I need to add a "express.json()", so I needed to define my API endpoints first then add the middleware section later.
-
-#Simple Idea of a Handoff
-
- -Example:
-  // TODO: connect this route to the database later
-app.get('/users', (req, res) => {
-  res.json({ message: "Users route not finished yet" });
-});
-
--To simplify it in the eyes of someone who is unable to process the tech language this is a simple snipit of code that I created to show how these comments can help. By adding the "//TODO:...." you simple adding a sticky note to be specific to your code so that you are able to come back on a later date to complete it. So, in this case you can see that where the TODO comment is, that you need to connect the database to this system so it can run properly. This way you are able to pickup where you left off, or if you were to be handing this code to another individual, they can read this stick note and understand what to add to the code to make to run properly. 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
