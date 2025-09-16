@@ -42,6 +42,9 @@ Link: https://www.sitepoint.com/useful-built-in-node-js-apis/
 
 Handsoffs are used whe writting a node.js app because it allows you transfer tasks or responsibilities to ether someone else in group or to yourself for a furture date. It allows you to write a snipit of text that explains where you left off in the code, or write a simple message to someone else to complete the next part of the code to ensure you are directly where you left off in the code. This allows the creation of the node.js app to have continuity and efficiency in many different settings. In simple terms, handoffs are where you can write a note for yourself, then leave the coding platform, and return on a later date and see the note you left yourself and start right back where you ended off. 
 
+
+
+
 #Example of a Handoff
 
 In my node.js app I have written staright in the code, in this case the App.mjs file, comments that tell me what task I need to complete next. 
@@ -81,17 +84,24 @@ app.get('/barry', (req, res) => {
 
 Another example of me using a "handoff" in mode code so that I wasn't confused when returning to the code or forgetting what to add is above. The comments "//endpoints...middlewares...apis?" told me when returning to the codes that I needed to add enpoints such as /api/query. The middlewares section explained that I need to add a "express.json()", so I needed to define my API endpoints first then add the middleware section later.
 
+
+
 #Simple Idea of a Handoff
 
 ***************************************************************************
 
  -Example:
+ 
   // TODO: connect this route to the database later
+  
 app.get('/users', (req, res) => {
+
   res.json({ message: "Users route not finished yet" });
+  
 });
 
 ***************************************************************************
+
 
 -To simplify it in the eyes of someone who is unable to process the tech language this is a simple snipit of code that I created to show how these comments can help. By adding the "//TODO:...." you simple adding a sticky note to be specific to your code so that you are able to come back on a later date to complete it. So, in this case you can see that where the TODO comment is, that you need to connect the database to this system so it can run properly. This way you are able to pickup where you left off, or if you were to be handing this code to another individual, they can read this stick note and understand what to add to the code to make to run properly. 
 
