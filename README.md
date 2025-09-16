@@ -49,9 +49,13 @@ In my node.js app I have written staright in the code, in this case the App.mjs 
 ***********************************************************************
 
  -app.get('/api/url/:iaddasfsd', (req, res) => {
+ 
   console.log("client request with URL param:", req.params.iaddasfsd); 
+  
     // const name = req.query.name; 
+    
     // res.json({"message": `Hi, ${name}. How are you?`});
+    
   });
   
 ************************************************************************
