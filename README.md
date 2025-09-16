@@ -46,16 +46,19 @@ Handsoffs are used whe writting a node.js app because it allows you transfer tas
 
 In my node.js app I have written staright in the code, in this case the App.mjs file, comments that tell me what task I need to complete next. 
 
-/***********************************************************************
-*  -app.get('/api/url/:iaddasfsd', (req, res) => {
-*   console.log("client request with URL param:", req.params.iaddasfsd); 
-*    // const name = req.query.name; 
-*    // res.json({"message": `Hi, ${name}. How are you?`});
-*  });
-***********************************************************************/
+***********************************************************************
+
+ -app.get('/api/url/:iaddasfsd', (req, res) => {
+  console.log("client request with URL param:", req.params.iaddasfsd); 
+    // const name = req.query.name; 
+    // res.json({"message": `Hi, ${name}. How are you?`});
+  });
+  
+************************************************************************
 
 Note that the items I commented-out told my future self that I shouldn't forget that this route should eventually send JSON back to the client. That way when I came back to the code I wouldn't be puzzled or confused on what the /api/url/:id was supposed to be doing, instad I left a commit to ensure I knew what it was supposed to do.
 
+***************************************************************************
 
 -app.get('/', (req, res) => {
   res.send('Hello Express from Render 😍😍😍. <a href="barry">barry</a>')
@@ -70,15 +73,21 @@ app.get('/barry', (req, res) => {
 
 })
 
+***************************************************************************
+
 Another example of me using a "handoff" in mode code so that I wasn't confused when returning to the code or forgetting what to add is above. The comments "//endpoints...middlewares...apis?" told me when returning to the codes that I needed to add enpoints such as /api/query. The middlewares section explained that I need to add a "express.json()", so I needed to define my API endpoints first then add the middleware section later.
 
 #Simple Idea of a Handoff
+
+***************************************************************************
 
  -Example:
   // TODO: connect this route to the database later
 app.get('/users', (req, res) => {
   res.json({ message: "Users route not finished yet" });
 });
+
+***************************************************************************
 
 -To simplify it in the eyes of someone who is unable to process the tech language this is a simple snipit of code that I created to show how these comments can help. By adding the "//TODO:...." you simple adding a sticky note to be specific to your code so that you are able to come back on a later date to complete it. So, in this case you can see that where the TODO comment is, that you need to connect the database to this system so it can run properly. This way you are able to pickup where you left off, or if you were to be handing this code to another individual, they can read this stick note and understand what to add to the code to make to run properly. 
 
