@@ -7,9 +7,13 @@
 # Benefits of Using Node.js
 
 -It gives you a production boost.
+
 -Ensures you code works properly.
+
 -It is easy to maintain your code, while allowing you to provide correct maintance.
+
 -Improves development of your code.
+
 -Less room for debugging your code (reducing errors).
 
 #Different API functions that were used in my Node.js app
