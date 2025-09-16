@@ -46,11 +46,13 @@ Handsoffs are used whe writting a node.js app because it allows you transfer tas
 
 In my node.js app I have written staright in the code, in this case the App.mjs file, comments that tell me what task I need to complete next. 
 
--app.get('/api/url/:iaddasfsd', (req, res) => {
-  console.log("client request with URL param:", req.params.iaddasfsd); 
-  // const name = req.query.name; 
-  // res.json({"message": `Hi, ${name}. How are you?`});
-});
+/***********************************************************************
+*  -app.get('/api/url/:iaddasfsd', (req, res) => {
+*   console.log("client request with URL param:", req.params.iaddasfsd); 
+*    // const name = req.query.name; 
+*    // res.json({"message": `Hi, ${name}. How are you?`});
+*  });
+***********************************************************************/
 
 Note that the items I commented-out told my future self that I shouldn't forget that this route should eventually send JSON back to the client. That way when I came back to the code I wouldn't be puzzled or confused on what the /api/url/:id was supposed to be doing, instad I left a commit to ensure I knew what it was supposed to do.
 
