@@ -108,6 +108,8 @@ app.get('/users', (req, res) => {
 -To simplify it in the eyes of someone who is unable to process the tech language this is a simple snipit of code that I created to show how these comments can help. By adding the "//TODO:...." you simple adding a sticky note to be specific to your code so that you are able to come back on a later date to complete it. So, in this case you can see that where the TODO comment is, that you need to connect the database to this system so it can run properly. This way you are able to pickup where you left off, or if you were to be handing this code to another individual, they can read this stick note and understand what to add to the code to make to run properly. 
 
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 #Git Commands
 
 -"git commit -m "message"
