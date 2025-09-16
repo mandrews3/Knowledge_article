@@ -16,6 +16,8 @@
 
 -Less room for debugging your code (reducing errors).
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 #Different API functions that were used in my Node.js app
 
 -app.use(express.json())
