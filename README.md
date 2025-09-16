@@ -97,6 +97,7 @@ There are a muiltitude of git commands you can uses, heres a link to show you a 
 Another example of me using a "handoff" in mode code so that I wasn't confused when returning to the code or forgetting what to add is above. The comments "//endpoints...middlewares...apis?" told me when returning to the codes that I needed to add enpoints such as /api/query. The middlewares section explained that I need to add a "express.json()", so I needed to define my API endpoints first then add the middleware section later.
 
 #Simple Idea of a Handoff
+
  -Example:
   // TODO: connect this route to the database later
 app.get('/users', (req, res) => {
